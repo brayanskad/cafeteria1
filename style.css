@@ -1,134 +1,267 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-/* 
-    font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100; */
-
-* {
-    font-family: "roboto", sans-serif;
+*{
     margin: 0;
     padding: 0;
 }
-
+@font-face {
+    font-family: inter;
+    src: url("./assets/fonte/Inter-VariableFont_opsz\,wght.ttf");
+}
 .menu {
+
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: #7a3611;
-    height: 60px;
     align-items: center;
-    color: aliceblue;
-
-
+    padding: 10px;
+    background-color: #7a3611;
 }
-
-.logo {
+.menu-logo{
     display: flex;
-    flex-direction: row;
-    justify-content: end;
+    flex-direction: row ;
+    align-items: center;
+    justify-content: space-around;
+    width: 210px; 
+}
+.texto-logo{
     font-size: 30px;
-    gap: 10px;
-
+    font-family: inter;
+    color: white;
 }
-
-.categorias {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    font-size: 20px;
-
-}
-
-.carrinho {
+.icon{
+    color: white;
     font-size: 30px;
 }
-
-.banner {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("assets/banner/photo-1521017432531-fbd92d768814.jpg");
-    height: 100vh;
-    width: 100%;
+.lista-menu{
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    font-size: 15px;
+}
+li a{
+    font-family: inter;
+    text-decoration: none;
+    color:white
+}
+li {
+    list-style: none;
+}
+.banner{
+    background-image: url("./assets/banner/photo-1521017432531-fbd92d768814.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    margin: auto;
-    flex-direction: column;
-    color: aliceblue;
+    height: 90vh;
+    width: 100%;
+    display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.txt-banner {
-    justify-items: center;
-    height: 200px;
-
-    width: 900px;
     flex-direction: column;
-    margin-right: 20px;
 }
 
-.titulo {
-    font-size: 55px;
+.section-center{
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    align-items: center;
+
 }
 
-.descricao {
+.caixa-titulo-banner{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.titulo-banner{
+    color: white;
+    font-size: 60px;
+    font-family: inter;
+    padding: 10px;
+}
+
+.texto-banner{
+    color: white;
+    font-size: 25px;
+    font-family: inter;
+    padding: 10px;
+}
+
+.btn-banner-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e07600;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 15px;
+    width: 130px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-banner-menu:hover{
+    background-color: #b66100;
+}
+
+.section-mid{
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    align-items: center;
+}
+.caixa-texto-produtos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px;
+}
+.titulo-produtos{
+    font-family: inter;
+    color: #7a3611;
     font-size: 30px;
 }
 
-.btn-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 10px;
-    height: 50px;
-    width: 120px;
-    background-color: #e07600;
-    color: aliceblue;
-    border: none;
-    margin-top: 20px;
-}
-.pag-2{
-    height: 750px;
-}
-.txt-pag2{
-    height: 100px;
-    width: 100%;
+.texto-produtos{
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 50px;
-}
-.tt2{
-    font-size: 40px;
-    color: #7a3611;
-}
-.des2{
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
-    color: darkgray;
-}
-
-.btn-container{
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   gap: 30px;
-}
-
-.btn-classe{
+    font-family: inter;
+    color: gray;
     font-size: 15px;
-    width: 100px;
-    height: 50px;
+    padding: 10px;
+    width: 600px;
+    
+}
+.caixa-btn-produtos{
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.btn-cafe{
+    background-color: #e07600;
     border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-family: inter;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-confeitaria{
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-family: inter;
+    background-color: white;
+    cursor: pointer;
+}
+.btn-confeitaria:hover{
+    background-color: #fffbeb;
+}
+
+.btn-comida{
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-family: inter;
+    background-color: white;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+} 
+.btn-comida:hover{
+    background-color: #fffbeb;
+}
+.btn-icon{
+    color: black;
+    font-size: 20px;
+}
+main{ 
+    background-color: #f9fafb;
+}
+.btn-icon-selected{
+    color: white;
+    font-size: 20px;
+}
+.section-cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+.caixa-cards{
+    border: 1px solid lightgray;
+    width: 500px;
+    height: 380px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px  rgb(0 0 0 / 10%);
+    transition: all 0.2s ease-in-out;
+}
+.caixa-cards:hover{
+    box-shadow: 5px 10px 5px  rgb(0 0 0 / 15%);
+    scale: 105%;
+    transition: 1s ease-in-out;
+}
+
+.caixa-img-cards{
+    width: 500px;
+    height: 250px;
     border-radius: 15px;
 }
-
-.btn-classe:hover{
+.img-cards{
+    width: 500px;
+    height: 250px;
+    border-radius: 15px;
+}
+.caixa-texto-card{
+    padding: 20px;
+}
+.titulo-card{
+    font-family: inter;
+    font-size: 18px;
+}
+.subtitulo-card{
+    font-family: inter;
+    font-size: 15px;
+    color: grey;
+    padding: 10px 0px;
+}
+.preco-btn-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: inter;
+    font-size: 20px;
+}
+.btn-card{
+    font-family: inter;
+    font-size: 15px;
+    border: none;
     background-color: #e07600;
-    scale: 110%;
     color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+.card-btn{
+    font-size: 15px;
+}
+.preco-card{
+    color: #b66100;
 }

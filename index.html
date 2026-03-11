@@ -4,64 +4,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Café Delicia</title>
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<script src="script.js" defer></script>
 </head>
 
 <body>
     <header>
         <nav class="menu">
-            <div class="logo">
-                <i class="bi bi-cup-hot"></i>
-                <p>Café Delicia</p>
+            <div class="menu-logo">
+                <i class="bi bi-cup-hot icon"></i>
+                <p class="texto-logo"> Café Delicia</p>
             </div>
-            <div class="categorias">
-                <p>Inicio </p>
-                <p>Productos</p>
-                <p> sobre nosotros</p>
-                <p>Contacto</p>
+            <ul class="lista-menu">
+                <li>
+                    <a href="#">Inicio</a>
+                </li>
+                <li>
+                    <a href="#">Produtos</a>
+                </li>
+                <li>
+                    <a href="#">Sobre Nós</a>
+                </li>
+                <li>
+                    <a href="#">Contatos</a>
+                </li>
+            </ul>
+            <div class="menu-icones">
+                <i class="bi bi-cart2 icon"></i>
+                <i class="bi bi-list icon"></i>
             </div>
-            <div class="carrinho"><i class="bi bi-cart"></i></div>
         </nav>
     </header>
     <main>
-        <section class="banner">
+        <section class="section-center">
+            <div class="banner">
+                <div class="elementos-banner">
 
-            <div class="caixa-banner">
-
-                <div class="txt-banner">
-                    <p class="titulo">Bienvenido a Café Delicia</p>
-                    <p class="descricao">
-                        El mejor café artesanal y repostería fresca todos los días
+                </div>
+                <div class="caixa-titulo-banner">
+                    <p class="titulo-banner">
+                        Bem-vindo ao Café Delicia
                     </p>
-                    <button class="btn-menu">Ver menú</button>
+                    <p class="texto-banner">
+                        O melhor café artesanal e doces frescos todos os dias.
+                    </p>
+                    <button class="btn-banner-menu">Ver Menu</button>
+                </div>
+            </div>
+        </section>
+        <section class="section-mid">
+            <div class="caixa-texto-produtos">
+                <div class="titulo-produtos"> Nossos Produtos</div>
+                <div class="texto-produtos">
+                    Descubra nossa seleção de cafés artesanais, doces frescos e pratos deliciosos preparados com os
+                    melhores ingredientes.</div>
+            </div>
+            <div class="caixa-btn-produtos">
+                <button class="btn-cafe"> <i class="bi bi-cup-hot btn-icon-selected"></i> Café</button>
+                <button class="btn-confeitaria"> <i class="bi bi-cake2 btn-icon"></i> Confeitaria</button>
+                <button class="btn-comida"> <i class="bi bi-egg-fried"></i> Comida</button>
+            </div>
+        </section>
+        <section class="section-cards">
+            <div class="lista-produtos">
+                <!-- produtos -->
+                <div class="caixa-cards">
+                <div class="card-popular">
+
+                    <div class="caixa-img-cards"><img class="img-cards" src="./assets/café/expresso.jpg" alt="">
+                    </div>
+                    <div class="caixa-texto-card">
+
+                        <p class="titulo-card">Espresso</p>
+                        <p class="subtitulo-card">Café concentrado e aromático</p>
+                        <div class="preco-btn-card">
+                            <p class="preco-card">$3.50</p>
+                            <button class="btn-card"> <i class="bi bi-cart2 card-btn"></i> Adicionar </button>
+                        </div>
+
+                    </div>
 
                 </div>
             </div>
+            </div>
 
-        </section>
-        <section class="pag-2">
-            <div class="txt-pag2">
-                <p class="tt2">Nuestros Productos</p>
-                <p class="des2">Descubre nuestra selección de cafés artesanales, repostería fresca y alimentos deliciosos </p>
-                <p class="des2">preparados con los mejores ingredientes</p>
-            </div>
-            <div class="btn-container">
-                <button class="btn-classe"><i class="bi bi-cup-hot"></i> Café</button>
-                <button class="btn-classe"><i class="bi bi-cake2">Repostería</i></button>
-                <button class="btn-classe"><i class="bi bi-windows"></i>Comida</button>
-            </div>
-            
+        
 
 
         </section>
     </main>
+    <footer>
 
+    </footer>
 </body>
 
 </html>
