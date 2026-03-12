@@ -158,7 +158,7 @@ li {
     cursor: pointer;
 }
 
-.btn-confeitaria{
+.btn-reposteria{
     border: none;
     border-radius: 10px;
     padding: 10px 20px;
@@ -167,7 +167,7 @@ li {
     background-color: white;
     cursor: pointer;
 }
-.btn-confeitaria:hover{
+.btn-reposteria:hover{
     background-color: #fffbeb;
 }
 
@@ -176,7 +176,7 @@ li {
     border-radius: 10px;
     padding: 10px 20px;
     font-size: 15px;
-    font-family: inter;
+
     background-color: white;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
@@ -202,7 +202,7 @@ main{
     justify-content: center;
     padding-top: 20px;
 }
-.caixa-cards{
+.lista-produtos{
     border: 1px solid lightgray;
     width: 500px;
     height: 380px;
