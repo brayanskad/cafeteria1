@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 *{
-    font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -176,7 +173,7 @@ li {
     border-radius: 10px;
     padding: 10px 20px;
     font-size: 15px;
-
+    font-family: inter;
     background-color: white;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
@@ -200,71 +197,92 @@ main{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding-top: 20px;
-}
-.lista-produtos{
-    border: 1px solid lightgray;
-    width: 500px;
-    height: 380px;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: all 0.1s ease-in-out;
-    cursor: pointer;
-    box-shadow: 5px 5px 5px  rgb(0 0 0 / 10%);
-    transition: all 0.2s ease-in-out;
-}
-.caixa-cards:hover{
-    box-shadow: 5px 10px 5px  rgb(0 0 0 / 15%);
-    scale: 105%;
-    transition: 1s ease-in-out;
 }
 
-.caixa-img-cards{
-    width: 500px;
-    height: 250px;
-    border-radius: 15px;
-}
 .img-cards{
     width: 500px;
-    height: 250px;
+    height: 320px;
     border-radius: 15px;
+    background-size: cover;
+    background-repeat: repeat;
+    transition: all ease-in-out 0.2s;
 }
 .caixa-texto-card{
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    justify-content: left;
+    margin-top: 25px;
 }
 .titulo-card{
     font-family: inter;
     font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    justify-content: left;
+    margin-top: 25px;
 }
 .subtitulo-card{
     font-family: inter;
-    font-size: 15px;
-    color: grey;
-    padding: 10px 0px;
-}
-.preco-btn-card{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    font-family: inter;
+    justify-content: left;
     font-size: 20px;
 }
+.preco-btn-card{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    width: 450px;
+    justify-content: space-between;
+    align-items: center;
+}
 .btn-card{
+    
     font-family: inter;
-    font-size: 15px;
-    border: none;
-    background-color: #e07600;
-    color: white;
+    height: 40px;
+    width: 135px;
     border-radius: 10px;
-    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    color: white;
+    background-color: rgb(255, 115, 0);
+    border: none;
+    gap: 10px;
 }
 .card-btn{
     font-size: 15px;
 }
 .preco-card{
-    color: #b66100;
+   font-size: 20px;
+    color: rgb(138, 62, 0);
+    display: flex;
+    height: 10px;
+}
+
+.card-popular{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 5px 5px 5px rgba(201, 201, 201, 0.5);
+    cursor: pointer;
+}
+.card-popular:hover{
+    scale: 1.05;
+    box-shadow: 5px 10px 5px  rgb(0 0 0 / 15%);
+}
+.lista-produtos{
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    height: 600px;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 10px;
 }
